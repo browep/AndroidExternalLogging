@@ -162,21 +162,6 @@ public class Log {
         return android.util.Log.e(tag, msg, tr);
     }
 
-    public static int wtf(java.lang.String tag, java.lang.String msg) {
-        writeToFile(ERROR, tag, msg, null);
-        return android.util.Log.wtf(tag, msg);
-    }
-
-    public static int wtf(java.lang.String tag, java.lang.Throwable tr) {
-        writeToFile(ERROR, tag, null, tr);
-        return android.util.Log.wtf(tag, tr);
-    }
-
-    public static int wtf(java.lang.String tag, java.lang.String msg, java.lang.Throwable tr) {
-        writeToFile(ERROR, tag, msg, tr);
-        return android.util.Log.wtf(tag, msg, tr);
-    }
-
     public static java.lang.String getStackTraceString(java.lang.Throwable tr) {
         return android.util.Log.getStackTraceString(tr);
     }
